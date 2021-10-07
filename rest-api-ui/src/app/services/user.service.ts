@@ -46,6 +46,12 @@ export class UserService { //this service is only responsible for one thing: HTT
       )
   }
 
+  deleteUser(id: number) {
+    let deleteUrl = `${url}/${id}`
+    this.http.request('delete', deleteUrl).subscribe(console.log);
+    // note the slightly different format for the DELETE function
+  }
+
   public findByUsername(username: string): Observable<User> {
     return this.http.get<User>(`${url}/find/${username}`);
   }

@@ -1,0 +1,15 @@
+<h2>Users</h2>
+
+<span>{{title | uppercase}}</span>
+
+
+<br>
+
+<span>{{age | squarePipe}}</span>
+
+<br>
+<div *ngFor="let u of userService.users">
+  <!-- <span>{{ u.name }}'s theory is {{ getTheory(u.id)?.title }}</span> -->
+  <span>{{u.name}}'s theory is {{(u.id | theory)?.title}}</span>
+
+</div>

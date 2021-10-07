@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AllComponent } from './components/all/all.component';
 import { FindComponent } from './components/find/find.component';
+import { RemoveComponent } from './remove/remove.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FindComponent } from './components/find/find.component';
     MainComponent,
     RegisterComponent,
     AllComponent,
-    FindComponent
+    FindComponent,
+    RemoveComponent
   ],
   imports: [
     BrowserModule,

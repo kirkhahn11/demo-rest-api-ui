@@ -1,3 +1,4 @@
+import { RemoveComponent } from './remove/remove.component';
 import { FindComponent } from './components/find/find.component';
 import { AllComponent } from './components/all/all.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'all', component: AllComponent },
   { path: 'find', component: FindComponent },
+  { path: 'remove', component: RemoveComponent },
   { path: '**', component: MainComponent } // this is a wildcard incase the path is not
 ];
 
